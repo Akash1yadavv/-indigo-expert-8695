@@ -1,0 +1,155 @@
+
+#cantainer{
+    width: 100%;
+    height: 900px;
+    background-image: url("https://ideakart.com/assets/youridea-23d18c0fab7feb4d66e4c1dbc419428c71b2014ff742fc52b4006f6b65af6b67.jpg");
+}
+
+#navbar {
+    background-color: rgb(20, 20, 182);
+    display: flex;
+    justify-content: space-around;
+    gap:auto;
+    height: 59px;
+    align-items: center;
+}
+.nav>a {
+    color: white;
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+}
+input,
+button {
+    font-size: 20px;
+}
+#navbar>div {
+    margin: auto;
+    margin: 0px 15px 0px 15px;
+}
+
+#cant{
+    width: 90%;
+    margin: auto;
+}
+
+#formCant{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+#formCant>div>input{
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    padding: 8px;
+    margin:10px 0px 15px 0px;
+}
+#message{
+    width:96%;
+    margin: auto;
+    padding: 0px 0px 35px 8px;
+    margin:10px 0px 15px 0px;
+}
+form>button{
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    background-color: green;
+    border: none;
+}
+
+h3{
+    text-align: center;
+}
+#cant2{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+@media all and (min-width:481px) and (max-width : 768px) {
+    #navbar {
+        background-color: rgb(20, 20, 182);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #navbar>div {
+        margin: auto;
+        margin: 0px 15px 0px 15px;
+    }
+
+    .nav>a {
+        color: white;
+        margin-right: 20px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    input,
+    button {
+        font-size: 16px;
+    }
+    input {
+        width: 50%;
+    }
+    #checkbox,#btn{
+        padding: 7px;
+        background-color: green;
+        margin-bottom: 10px;
+    }
+    #formCant{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+}
+@media all and (min-width:170px) and (max-width : 480px) {
+    #navbar {
+        margin: auto;
+
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    #navbar>div {
+        margin: auto;
+        padding-bottom: 14px;
+        padding-top: 10px;
+    }
+    .nav>a{
+        color: white;
+        margin-right: 10px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    input,
+    button {
+        font-size: 13px;
+    }
+    input {
+        width: 25%;
+    }
+    #checkbox,#btn{
+        padding: 7px;
+        background-color: green;
+        margin-bottom: 10px;
+    }
+    #formCant{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+}
+
+
+
+
+
+

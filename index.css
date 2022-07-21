@@ -1,0 +1,117 @@
+#navbar {
+    background-color: rgb(20, 20, 182);
+    display: flex;
+    justify-content: space-around;
+    gap:auto;
+    height: 59px;
+    align-items: center;
+}
+.nav>a {
+    color: white;
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+}
+input,
+button {
+    font-size: 20px;
+}
+#navbar>div {
+    margin: auto;
+    margin: 0px 15px 0px 15px;
+}
+
+
+
+
+#cantainer{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#cantainer>div{
+    width: 50%;
+    border: 1px solid red;
+}
+#cantainer>img{
+    display: block;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:481px) and (max-width : 768px) {
+    #navbar {
+        background-color: rgb(20, 20, 182);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #navbar>div {
+        margin: auto;
+        margin: 0px 15px 0px 15px;
+    }
+
+    .nav>a {
+        color: white;
+        margin-right: 20px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    input,
+    button {
+        font-size: 16px;
+    }
+    input {
+        width: 50%;
+    }
+    /* #checkbox,#btn{
+        padding: 7px;
+        background-color: green;
+        margin-bottom: 10px;
+    } */
+}
+@media all and (min-width:170px) and (max-width : 480px) {
+    #navbar {
+        margin: auto;
+
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    #navbar>div {
+        margin: auto;
+        padding-bottom: 14px;
+        padding-top: 10px;
+    }
+    .nav>a{
+        color: white;
+        margin-right: 10px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    input,
+    button {
+        font-size: 13px;
+    }
+    input {
+        width: 25%;
+    }
+    /* #checkbox,#btn{
+        padding: 7px;
+        background-color: green;
+        margin-bottom: 10px;
+    } */
+}

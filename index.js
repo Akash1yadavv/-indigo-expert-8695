@@ -93,7 +93,7 @@
   {
     image_url: "https://images-eu.ssl-images-amazon.com/images/I/51HjCeriOlL.jpg",
     name: "Barron's SAT Subject Test Math Level 1",
-    price: "360.0",
+    price: 360.0,
     cart_img:"https://www.bing.com/th?id=OIP.ILhpj2TXyR5fR4YO7mMs8QHaH3&w=242&h=257&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
     view: "View Now",
     line_img:"https://th.bing.com/th/id/OIP.6045obu5Er5bZUEjyqvTbAAAAA?pid=ImgDet&rs=1",
@@ -102,7 +102,7 @@
   {
     image_url: "https://images-eu.ssl-images-amazon.com/images/I/41JUBDkCurL.jpg",
     name: "GRE Prep Plus 2020",
-    price: "",
+    price: 351.0,
     cart_img:"https://www.bing.com/th?id=OIP.ILhpj2TXyR5fR4YO7mMs8QHaH3&w=242&h=257&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
     view: "View Now",
     line_img:"https://th.bing.com/th/id/OIP.6045obu5Er5bZUEjyqvTbAAAAA?pid=ImgDet&rs=1",
@@ -365,7 +365,6 @@
   },
 ]
 
-
 kartData.forEach(function(ele){
     let div=document.createElement("div");
     let img=document.createElement("img")
@@ -378,14 +377,33 @@ kartData.forEach(function(ele){
     p.innerText=ele.price
     p.style.color="teal"
 
+
+    let parent=document.createElement("div");
+
+    let div1=document.createElement("div");
+    let div2=document.createElement("div");
+    let div3=document.createElement("div");
+    let div4=document.createElement("div");
+
+    let btn1Img=document.createElement("img")
+    btn1Img.src=ele.cart_img
+
     let btn1=document.createElement("button")
     btn1.innerText=ele.view
     btn1.style.color="teal"
 
+    let btn2Img=document.createElement("img")
+    btn2Img.src=ele.line_img
+
     let btn2=document.createElement("button")
     btn2.innerText=ele.detail
     btn2.style.color="teal"
+    div1.append(btn1Img)
+    div2.append(btn1)
+    div3.append(btn2Img)
+    div4.append(btn2)
+    parent.append(div1,div2,div3,div4)
 
-    div.append(img,h3,p,btn1,btn2)
-    document.querySelector("#cantainer").append(div)
+    div.append(img,h3,p,parent)
+    document.querySelector("#container").append(div)
 })

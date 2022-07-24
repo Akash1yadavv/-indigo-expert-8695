@@ -1,0 +1,150 @@
+#navbar {
+    background-color: rgb(20, 20, 182);
+    display: flex;
+    justify-content: space-around;
+    gap: auto;
+    height: 59px;
+    align-items: center;
+}
+.nav>a {
+    color: white;
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+}
+input,
+button {
+    font-size: 20px;
+}
+#navbar>div {
+    margin: auto;
+    margin: 0px 15px 0px 15px;
+}
+
+
+#container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+#container>div{
+    padding: 10px;
+}
+#container>div>img{
+    width: 100%;
+}
+#container>div>div{
+    display: grid;
+    grid-template-columns: 15% 35% 15% 35%;
+    gap: 3px;
+
+}
+#container>div>div>div>img{
+    width: 100%;
+    height: 26px;
+}
+#container>div>div>div>button{
+    font-size: 13px;
+    border: none;
+    align-items: center;
+}
+#container>div>div>div>{
+    text-align: center;
+}
+
+#h2{
+    margin-left: 61px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:481px) and (max-width : 768px) {
+    #navbar {
+        background-color: rgb(20, 20, 182);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #navbar>div {
+        margin: auto;
+        margin: 0px 15px 0px 15px;
+    }
+
+    .nav>a {
+        color: white;
+        margin-right: 20px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    input,
+    button {
+        font-size: 16px;
+    }
+    input {
+        width: 50%;
+    }
+    /* #checkbox,#btn{
+        padding: 7px;
+        background-color: green;
+        margin-bottom: 10px;
+    } */
+    #container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+}
+@media all and (min-width:170px) and (max-width : 480px) {
+    #navbar {
+        margin: auto;
+
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    #navbar>div {
+        margin: auto;
+        padding-bottom: 14px;
+        padding-top: 10px;
+    }
+    .nav>a{
+        color: white;
+        margin-right: 10px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    input,
+    button {
+        font-size: 13px;
+    }
+    input {
+        width: 25%;
+    }
+    /* #checkbox,#btn{
+        padding: 7px;
+        background-color: green;
+        margin-bottom: 10px;
+    } */
+
+    #container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+}

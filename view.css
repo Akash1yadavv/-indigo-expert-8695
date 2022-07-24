@@ -1,0 +1,118 @@
+#navbar {
+    background-color: rgb(20, 20, 182);
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    height: 59px;
+    align-items: center;
+}
+a,label{
+    color: white;
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+}
+input,
+button {
+    font-size: 20px;
+}
+#navbar>div {
+    margin: auto;
+    margin: 0px 15px 0px 15px;
+}
+@media all and (min-width:481px) and (max-width : 768px) {
+    #navbar {
+        background-color: rgb(20, 20, 182);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #navbar>div {
+        margin: auto;
+        margin: 0px 15px 0px 15px;
+    }
+
+    a ,label{
+        color: white;
+        margin-right: 20px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    input,
+    button {
+        font-size: 16px;
+    }
+    input {
+        width: 50%;
+    }
+}
+@media all and (min-width:170px) and (max-width : 480px) {
+    #navbar {
+        margin: auto;
+
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    #navbar>div {
+        margin: auto;
+        padding-bottom: 14px;
+        padding-top: 10px;
+    }
+    a,label{
+        color: white;
+        margin-right: 10px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    input,
+    button {
+        font-size: 13px;
+    }
+    input {
+        width: 25%;
+    }
+}
+#page{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 60px;
+}
+
+td>a,h1>a{
+    color:white;
+    background-color: rgb(27, 27, 220);
+    border: none;
+    padding: 7px;
+}
+#page>div{
+    padding: 20px;
+}
+#page>div>img{
+    width: 100%;
+    height: 500px;
+}
+#part1>tr{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+}
+#part2>thead>tr,#part2>tbody>tr{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+   text-align: center;
+    
+}
+/* #part2>tbody>tr>td
+} */
+
+#bottom{
+    width: 90%;
+    margin: auto
+}

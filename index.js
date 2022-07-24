@@ -1,5 +1,14 @@
 
   var kartData=[
+    {
+    image_url: "https://images-eu.ssl-images-amazon.com/images/I/51S5K1ds-yL.jpg",
+    name: "Let Us Java",
+    price: "220.0",
+    cart_img:"https://www.bing.com/th?id=OIP.ILhpj2TXyR5fR4YO7mMs8QHaH3&w=242&h=257&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    view: "View Now",
+    line_img:"https://th.bing.com/th/id/OIP.6045obu5Er5bZUEjyqvTbAAAAA?pid=ImgDet&rs=1",
+    detail:"More details",
+  },
   {
     image_url: "https://images-eu.ssl-images-amazon.com/images/I/51PCoFrVIJL.jpg",
     name: "Implementing SAP S/4HANA Finance",
@@ -390,14 +399,20 @@ kartData.forEach(function(ele){
 
     let btn1=document.createElement("button")
     btn1.innerText=ele.view
-    btn1.style.color="teal"
+    btn1.style.color="blue"
+    btn1.addEventListener("click", function(){
+      viewMore()
+    })
 
     let btn2Img=document.createElement("img")
     btn2Img.src=ele.line_img
 
     let btn2=document.createElement("button")
     btn2.innerText=ele.detail
-    btn2.style.color="teal"
+    btn2.style.color="blue"
+    btn2.addEventListener("click",function(){
+      viewDetails()
+    })
     div1.append(btn1Img)
     div2.append(btn1)
     div3.append(btn2Img)
@@ -407,3 +422,11 @@ kartData.forEach(function(ele){
     div.append(img,h3,p,parent)
     document.querySelector("#container").append(div)
 })
+
+function viewMore(){
+  window.location.href="view.html"
+}
+
+function viewDetails(){
+  window.location.href="view.html"
+}

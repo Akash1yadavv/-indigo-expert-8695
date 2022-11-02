@@ -6,11 +6,13 @@
     height: 59px;
     align-items: center;
 }
+.nav>button{cursor: pointer;}
 .nav>a {
     color: white;
     margin-right: 40px;
     font-size: 20px;
     text-decoration: none;
+    cursor: pointer;
 }
 input,
 button {

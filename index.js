@@ -396,20 +396,24 @@ kartData.forEach(function(ele){
 
     let btn1Img=document.createElement("img")
     btn1Img.src=ele.cart_img
+    
 
     let btn1=document.createElement("button")
     btn1.innerText=ele.view
     btn1.style.color="blue"
+    btn1.style.cursor="pointer"
     btn1.addEventListener("click", function(){
       viewMore()
     })
 
     let btn2Img=document.createElement("img")
     btn2Img.src=ele.line_img
+    
 
     let btn2=document.createElement("button")
     btn2.innerText=ele.detail
     btn2.style.color="blue"
+    btn2.style.cursor="pointer"
     btn2.addEventListener("click",function(){
       viewDetails()
     })
